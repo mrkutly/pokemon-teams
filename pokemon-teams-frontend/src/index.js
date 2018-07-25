@@ -10,6 +10,9 @@ function addPokemon(e) {
 
     if (pokemonsList.childElementCount < 6) {
       createAndAppendPokemon(trainerId, pokemonsList)
+    } else {
+      let trainerName = e.target.parentElement.firstElementChild.innerText
+      alert(`${trainerName} can only have 6 pokemon`)
     }
   }
 }
